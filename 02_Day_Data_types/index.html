@@ -128,7 +128,7 @@
 
         //Egzersiz 2.10  ***
         let dizi = 'JavaScript';
-        randomdizi = Math.floor(Math.random() * dizi.length);
+        let randomdizi = Math.floor(Math.random() * dizi.length);
         console.log(dizi[randomdizi]);
 
         //Egzersiz 2.11
@@ -155,9 +155,9 @@
         //Egzersiz 3.3
         //Egzersiz 3.4
         let alinanMaas = 'Aylık maaştan 5000 euro, yıllık 10000 euro ikramiye, ayda 15000 euro çevrimiçi kurslardan kazanıyor.';
-        let aylik = parseInt(12 * alinanMaas.substr(14, 4));
+        let aylik = 12 * parseInt(alinanMaas.substr(14, 4));
         let ikramiye = parseInt(alinanMaas.substr(32, 5));
-        let kurs = parseInt(12 * alinanMaas.substr(58, 5));
+        let kurs = 12 * parseInt(alinanMaas.substr(58, 5));
         let toplamKazanc = aylik + ikramiye + kurs;
         console.log(toplamKazanc);
     </script>
